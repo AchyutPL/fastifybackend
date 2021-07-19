@@ -3,6 +3,7 @@ import cors from "cors";
 import productScreenRouter from "./routes/productscreenroute.js";
 import rowsRouter from "./routes/rowsrouter.js";
 import userRouter from "./routes/userRouter.js";
+import searchRouter from "./routes/searchrouter.js";
 import mongoconnection from "./mongo/connection.js";
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -12,6 +13,7 @@ app.use(cors());
 app.use("/api", productScreenRouter);
 app.use("/api", rowsRouter);
 app.use("/api/user", userRouter);
+app.use("/api", searchRouter);
 
 const PORT = process.env.PORT || 5000;
 
