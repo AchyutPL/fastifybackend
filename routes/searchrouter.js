@@ -1,7 +1,13 @@
 import express from "express";
 
 import expressAsyncHandler from "express-async-handler";
-import { Search } from "../mongo/models/productmodel.js";
+import {
+  Bags,
+  Fashion,
+  Laptops,
+  Mobiles,
+  Search,
+} from "../mongo/models/productmodel.js";
 
 const searchRouter = express.Router();
 

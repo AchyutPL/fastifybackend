@@ -7,6 +7,7 @@ const bagSchema = new mongoose.Schema(
     path: { type: String },
     countinstock: { type: Number },
     category: { type: String },
+    discount: { type: Number },
   },
   {
     timestamps: true,
@@ -19,6 +20,7 @@ const mobileSchema = new mongoose.Schema(
     path: { type: String },
     countinstock: { type: Number },
     category: { type: String },
+    discount: { type: Number },
   },
   {
     timestamps: true,
@@ -31,6 +33,7 @@ const laptopSchema = new mongoose.Schema(
     path: { type: String },
     countinstock: { type: Number },
     category: { type: String },
+    discount: { type: Number },
   },
   {
     timestamps: true,
@@ -56,6 +59,7 @@ const searchSchema = new mongoose.Schema(
     path: { type: String },
     countinstock: { type: Number },
     category: { type: String },
+    discount: { type: Number },
   },
   {
     timestamps: true,
